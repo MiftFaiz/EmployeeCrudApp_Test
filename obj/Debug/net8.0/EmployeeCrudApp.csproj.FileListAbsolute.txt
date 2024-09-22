@@ -12,3 +12,4 @@ E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\refint\EmployeeCrudApp.d
 E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.pdb
 E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.genruntimeconfig.cache
 E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\ref\EmployeeCrudApp.dll
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.sourcelink.json

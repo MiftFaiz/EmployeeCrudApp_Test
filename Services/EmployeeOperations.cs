@@ -7,17 +7,41 @@ namespace EmployeeCrudApp.Services
 {
     public class EmployeeOperations : IEmployeeOperations
     {
-        // List untuk menyimpan data karyawan
         private List<Employee> employees = new List<Employee>();
 
-        // Method untuk menambahkan karyawan
         public void AddEmployee(Employee employee)
         {
-            employees.Add(employee);
-            Console.WriteLine($"Karyawan {employee.FullName} telah ditambahkan.");
+            try
+            {
+                // Validasi tanggal lahir
+                if (employee.BirthDate > DateTime.Now)
+                {
+                    throw new ArgumentException("Tanggal lahir tidak bisa di masa depan.");
+                }
+
+                // Cek duplikat berdasarkan EmployeeID
+                if (employees.Exists(e => e.EmployeeID == employee.EmployeeID))
+                {
+                    throw new InvalidOperationException($"Karyawan dengan ID {employee.EmployeeID} sudah ada.");
+                }
+
+                employees.Add(employee);
+                Console.WriteLine($"Karyawan {employee.FullName} telah ditambahkan.");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+            }
         }
 
-        // Method untuk menampilkan daftar karyawan
         public void DisplayEmployees()
         {
             Console.WriteLine("Employee\n ID\tFullName\tBirthDate");
@@ -27,18 +51,24 @@ namespace EmployeeCrudApp.Services
             }
         }
 
-        // Method untuk menghapus karyawan berdasarkan EmployeeID
         public void DeleteEmployee(string employeeId)
         {
-            var employee = employees.Find(e => e.EmployeeID == employeeId);
-            if (employee != null)
+            try
             {
-                employees.Remove(employee);
-                Console.WriteLine($"Karyawan {employee.FullName} telah dihapus.");
+                var employee = employees.Find(e => e.EmployeeID == employeeId);
+                if (employee != null)
+                {
+                    employees.Remove(employee);
+                    Console.WriteLine($"Karyawan {employee.FullName} telah dihapus.");
+                }
+                else
+                {
+                    Console.WriteLine($"Karyawan dengan ID {employeeId} tidak ditemukan.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine($"Karyawan dengan ID {employeeId} tidak ditemukan.");
+                Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
             }
         }
     }

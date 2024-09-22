@@ -13,6 +13,8 @@ namespace EmployeeCrudApp
             IEmployeeOperations employeeOperations = new EmployeeOperations();
 
             // Menambahkan beberapa karyawan secara hardcoded
+            employeeOperations.AddEmployee(new Employee { EmployeeID = "1001", FullName = "Adit", BirthDate = new DateTime(2054, 8, 17) });
+            employeeOperations.AddEmployee(new Employee { EmployeeID = "1001", FullName = "Adit", BirthDate = new DateTime(1954, 8, 17) });
             employeeOperations.AddEmployee(new Employee { EmployeeID = "1001", FullName = "Adit", BirthDate = new DateTime(1954, 8, 17) });
             employeeOperations.AddEmployee(new Employee { EmployeeID = "1002", FullName = "Anton", BirthDate = new DateTime(1954, 8, 18) });
             employeeOperations.AddEmployee(new Employee { EmployeeID = "1003", FullName = "Amir", BirthDate = new DateTime(1954, 8, 19) });
