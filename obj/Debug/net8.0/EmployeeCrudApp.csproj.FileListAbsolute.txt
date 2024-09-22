@@ -1,0 +1,14 @@
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.AssemblyInfoInputs.cache
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.AssemblyInfo.cs
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.csproj.CoreCompileInputs.cache
+E:\Tugas\arutala . net\EmployeeCrudApp\bin\Debug\net8.0\EmployeeCrudApp.exe
+E:\Tugas\arutala . net\EmployeeCrudApp\bin\Debug\net8.0\EmployeeCrudApp.deps.json
+E:\Tugas\arutala . net\EmployeeCrudApp\bin\Debug\net8.0\EmployeeCrudApp.runtimeconfig.json
+E:\Tugas\arutala . net\EmployeeCrudApp\bin\Debug\net8.0\EmployeeCrudApp.dll
+E:\Tugas\arutala . net\EmployeeCrudApp\bin\Debug\net8.0\EmployeeCrudApp.pdb
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.dll
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\refint\EmployeeCrudApp.dll
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.pdb
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\EmployeeCrudApp.genruntimeconfig.cache
+E:\Tugas\arutala . net\EmployeeCrudApp\obj\Debug\net8.0\ref\EmployeeCrudApp.dll

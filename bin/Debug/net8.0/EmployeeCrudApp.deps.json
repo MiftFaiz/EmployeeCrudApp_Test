@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EmployeeCrudApp/1.0.0": {
+        "runtime": {
+          "EmployeeCrudApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EmployeeCrudApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
